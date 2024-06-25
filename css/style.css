@@ -8,19 +8,86 @@
   grid-template-rows: 48px 340px 284px;
   grid-template-areas: 
   "HEADER HEADER HEADER HEADER"
-  "SECTION1 SECTION2 SECTION2 SECTION3"                            
+  "ASIDE1 SECTION2 SECTION2 SECTION3"                            
   "CARD1 CARD2 CARD3 CARD4";
   background-color: #1C5550;
+  /* background-color: aquamarine; */
 }
 /* header */
 header{
-  background-color: chartreuse;
+  background-color: #1C5550;
   grid-area: HEADER;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_ul{
+  display: flex;
+  column-gap: 84px;
+}
+.header_list{
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  color: #DFD9D9;
+}
+.header_lastchilds{
+  display: flex;
+  column-gap: 32px;
+}
+.search{
+  display: flex;
+  align-items: center; 
+  padding: 8px 20px;
+  /* border: 1px solid black; */
+  border-radius: 4px;
+  box-shadow: 1.52px 3px 3px -0.8px #00000033 inset, 0px -0.3px 1px 0px #DFD9D966 inset;
+  /* box-shadow: 0px -0.3px 1px 0px #DFD9D966 inset; */
+  background-color:#00000033;
+}
+.header_h2{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  margin-right: 100px;
+  color: #91B599;
+}
+.fa-magnifying-glass{
+  color: #91B599;
+  cursor: pointer;
+}
+.user_button{/* აქ - ვებგვერდზე კურსორს რომ მივიტან არ ინიშნება ავტომატურად, სანამ აიკონს არ შევეხები. ბათონში ხო უნდა ჩავსვა "ა" ტეგი თუ პირიქით? ვერ გავიგე*/
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00000033;
+  box-shadow: 0px 2px 4px -2px #DFD9D966 inset, 0px 2px 4px 0px #00000033;
+  /* cursor: pointer; */
+}
+.fa-user{
+  font-size: 16px;
+  color: #91B599;
+}
+.cart_button{
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00000033;
+  box-shadow: 0px 2px 4px -2px #DFD9D966 inset, 0px 2px 4px 0px #00000033;
+  /* cursor: pointer; */
+}
+.fa-cart-shopping{
+  font-size: 16px;
+  color: #C3B97F;
 }
 /* sections */
-.section1{
+.aside1{
   background-color: cadetblue;
-  grid-area: SECTION1;
+  grid-area: ASIDE1;
 }
 .section2{
   background-color: rgb(3, 35, 36);
