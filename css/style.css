@@ -1,0 +1,49 @@
+.container{
+  width: min(100%, 1440px);
+  margin: auto;
+  display: grid;
+  gap: 48px 40px;
+  padding: 32px 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 48px 340px 284px;
+  grid-template-areas: 
+  "HEADER HEADER HEADER HEADER"
+  "SECTION1 SECTION2 SECTION2 SECTION3"                            
+  "CARD1 CARD2 CARD3 CARD4";
+  background-color: #1C5550;
+}
+/* header */
+header{
+  background-color: chartreuse;
+  grid-area: HEADER;
+}
+/* sections */
+.section1{
+  background-color: cadetblue;
+  grid-area: SECTION1;
+}
+.section2{
+  background-color: rgb(3, 35, 36);
+  grid-area: SECTION2;
+}
+.section3{
+  background-color: rgb(5, 92, 34);
+  grid-area: SECTION3;
+}
+/* cards */
+.card1{
+  background-color: blueviolet;
+  grid-area: CARD1;
+}
+.card2{
+  background-color: rgb(87, 4, 36);
+  grid-area: CARD2;
+}
+.card3{
+  background-color: rgb(73, 177, 3);
+  grid-area: CARD3;
+}
+.card4{
+  background-color: rgb(246, 95, 25);
+  grid-area: CARD4;
+}
