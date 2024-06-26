@@ -8,10 +8,9 @@
   grid-template-rows: 48px 340px 284px;
   grid-template-areas: 
   "HEADER HEADER HEADER HEADER"
-  "ASIDE1 SECTION2 SECTION2 SECTION3"                            
+  "ASIDE1 SECTION1 SECTION1 SECTION2"                            
   "CARD1 CARD2 CARD3 CARD4";
   background-color: #1C5550;
-  /* background-color: aquamarine; */
 }
 /* header */
 header{
@@ -40,10 +39,8 @@ header{
   display: flex;
   align-items: center; 
   padding: 8px 20px;
-  /* border: 1px solid black; */
   border-radius: 4px;
   box-shadow: 1.52px 3px 3px -0.8px #00000033 inset, 0px -0.3px 1px 0px #DFD9D966 inset;
-  /* box-shadow: 0px -0.3px 1px 0px #DFD9D966 inset; */
   background-color:#00000033;
 }
 .header_h2{
@@ -65,7 +62,6 @@ header{
   border-radius: 4px;
   background-color: #00000033;
   box-shadow: 0px 2px 4px -2px #DFD9D966 inset, 0px 2px 4px 0px #00000033;
-  /* cursor: pointer; */
 }
 .fa-user{
   font-size: 16px;
@@ -78,39 +74,161 @@ header{
   border-radius: 4px;
   background-color: #00000033;
   box-shadow: 0px 2px 4px -2px #DFD9D966 inset, 0px 2px 4px 0px #00000033;
-  /* cursor: pointer; */
 }
 .fa-cart-shopping{
   font-size: 16px;
   color: #C3B97F;
 }
-/* sections */
+/* aside */
 .aside1{
-  background-color: cadetblue;
   grid-area: ASIDE1;
+  background-color: #00000033;
+  box-shadow: 0px 4px 4px 0px #00000033 inset, 0px -1px 4px 0px #DFD9D966 inset;
+  padding: 38px 40px;
+}
+.aside_h2{
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #C3B97F;
+  margin-bottom: 16px;
+}
+.aside_nav_h2{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #91B599;
+  border-bottom: 1px solid #91B599;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.aside_ul{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.aside_nav_a{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #91B599;
+}
+/* sections */
+.section1{
+  background-image: url("../image/Rectangle\ 1.png");   /* აქ ჯობდა html დან შემომეტანა იმიჯი როგორც ქვევით ქარდებში, უბრალოდ-*/
+  background-repeat: no-repeat;                         /* ბოლოს მივხვიდ, ამდენი არუნდა მეწვალა */
+  background-size: cover;
+  background-position: center;
+  grid-area: SECTION1;
+  display: flex;
+  align-items: flex-end;
+}
+.section1_h2{
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1C5550;
+  background-color: #DFD9D9;
+  width: 680px;
+  height: 40px;
+  padding-left: 20px;
+}
+.section1_button{
+  border: none;
+  background-color: #C3B97F;
+  padding: 9px 50px;
+  margin-left: 439px;
+}
+.section1_button_a{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #DFD9D9;
 }
 .section2{
-  background-color: rgb(3, 35, 36);
+  background-color: rgb(158, 242, 23);   /**/
   grid-area: SECTION2;
-}
-.section3{
-  background-color: rgb(5, 92, 34);
-  grid-area: SECTION3;
 }
 /* cards */
 .card1{
-  background-color: blueviolet;
   grid-area: CARD1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img_div{
+  width: 320px;
+  height: 180px;
+  position: relative;
+}
+.article_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h5{
+  position: absolute;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #1C5550;
+  margin: 8px;
+}
+.article_p{
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #DFD9D9;
+}
+.article_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DFD9D9;
+}
+h4{
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1C5550;
+  padding: 8px;
+}
+.article_button{
+  border: none;
+  background-color: #C3B97F;
+  padding: 9px 10px;  
+}
+.article_button_a{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #DFD9D9;
 }
 .card2{
-  background-color: rgb(87, 4, 36);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   grid-area: CARD2;
 }
 .card3{
-  background-color: rgb(73, 177, 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   grid-area: CARD3;
 }
 .card4{
-  background-color: rgb(246, 95, 25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   grid-area: CARD4;
 }
+
